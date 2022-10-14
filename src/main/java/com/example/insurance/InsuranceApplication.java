@@ -10,7 +10,7 @@ public class InsuranceApplication {
 
         SpringApplication.run(InsuranceApplication.class, args);
 
-        System.out.println("Insurance SpringBoot Project Started now");
+
     }
 
 }
