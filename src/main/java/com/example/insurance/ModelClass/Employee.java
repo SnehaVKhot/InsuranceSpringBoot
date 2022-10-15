@@ -13,6 +13,9 @@ public class Employee {
     @OneToOne(cascade = CascadeType.ALL)
     private Address address;
 
+    public Employee() {
+    }
+
     public Employee(String employeeName, Long employeeSalary, Address address) {
         this.employeeName = employeeName;
         this.employeeSalary = employeeSalary;

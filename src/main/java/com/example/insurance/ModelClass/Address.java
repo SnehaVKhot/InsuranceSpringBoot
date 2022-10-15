@@ -1,11 +1,22 @@
 package com.example.insurance.ModelClass;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Address {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int addressId;
     private String city;
     private String state;
     private String country;
+
+    public Address() {
+    }
 
     public Address(String city, String state, String country) {
         this.city = city;
